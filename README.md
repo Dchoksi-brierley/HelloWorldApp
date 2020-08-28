@@ -5,9 +5,8 @@
 1. Write a static string "Hello World" to an output destination.<BR/>
   (Future tasks - Integration tests)
 
-2. Create an API as the provider of the static string (including unit tests).<BR/>
-  (Future features supported - retrival of a dynamic string from different sources, capability to add business logic for the string manipulation, security, localization, swagger, logging and error handling.)
-
+2. Retrieve a static string from the Message API.<BR/>
+  
 3. A configurable module to specify the output destination. <BR/>
   Current Phase: Specify console as the output destination.<BR/>
   (Future Enhancements Supported - the capability to plug in different output destinations and the option to provide configuration settings for the output destination, logging and error handling, unit tests)
