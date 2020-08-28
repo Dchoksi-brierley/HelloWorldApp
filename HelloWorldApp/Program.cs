@@ -1,4 +1,4 @@
-﻿using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Hosting;
 using System;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -12,7 +12,7 @@ namespace HelloWorldApp
     class Program
     {
 
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
            
             var httpClient = new ServiceCollection()
@@ -24,7 +24,8 @@ namespace HelloWorldApp
             string strHelloWorldMessage;
             try
             {
-                strHelloWorldMessage = GetMessage(httpClient).GetAwaiter().GetResult();
+                //strHelloWorldMessage = GetMessage(httpClient).GetAwaiter().GetResult();
+                strHelloWorldMessage = await GetMessage(httpClient);
             }
             catch
             {
